@@ -60,7 +60,7 @@ const getNetworkInfo = () => {
             });
         }
     });
-});
+};
 
 // --- API: Get Technician Status ---
 app.get('/api/status', async (req, res) => {
