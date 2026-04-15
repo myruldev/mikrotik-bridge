@@ -1,0 +1,17 @@
+{
+  "name": "mikrotik-bridge",
+  "version": "1.0.0",
+  "description": "Sidecar agent bridge for Mikrotik Manager Tool",
+  "main": "bridge.js",
+  "scripts": {
+    "start": "node bridge.js",
+    "dev": "nodemon bridge.js"
+  },
+  "author": "myruldev",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "routeros-client": "^2.1.2"
+  }
+}
