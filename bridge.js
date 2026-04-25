@@ -120,7 +120,12 @@ app.get('/api/ping', (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`🚀 Bridge Multi-Platform jalan di http://localhost:${PORT}`);
-    console.log(`OS Detected: ${os.platform()}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`\n================================================`);
+    console.log(`🚀 Bridge Mikrotik AKTIF di port ${PORT}`);
+    console.log(`DASHBOARD: http://localhost:${PORT}`);
+    console.log(`STATUS: Menunggu koneksi dari browser...`);
+    console.log(`================================================\n`);
+    console.log(`NOTE: Jika buka via Vercel (HTTPS), pastikan klik icon Gembok`);
+    console.log(`di browser -> Site Settings -> Allow Insecure Content.`);
 });
